@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in india: Shop Online for Mobile, Books, Watches, ...</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #e293ff, #dfdfdf);
+
+        }
+        nav {
+            background-color: #131921;
+            height: 65px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            color: white;
+        }
+
+        #amazonLogo {
+            height: 27px;
+            width: 85px;
+            padding-top: 22px;
+            color: white;
+            margin-left: 15px;
+            
+        }
+
+        #location {
+            padding-top: 17px;
+            margin-left: 30px;
+            font-size: 14px;
+        }
+
+        input {
+            height: 45px;
+            width: 700px;
+            padding-left: 10px;
+            font-size: 14px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        button {
+            height: 45px;
+            width: 70px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+            border: none;
+            background-color: #febd69;
+        }
+
+        #Categories {
+            background-color: #e6e6e6;
+            height: 45px;
+            width: 60px;
+            margin-top: 10px;
+            padding: 10px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            margin-left: 30px;
+            border: none;
+        }
+
+        #Languages {
+            background-color: transparent;
+            color: white;
+            height: 45px;
+            width: 40px;
+            margin-top: 10px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            margin-left: 20px;
+            border: none;
+            font-weight: bold;
+        }
+
+        .langopt {
+            color: black;
+        }
+
+        span{
+            color: #e6e6e6c4;
+            font-size: 12px;
+        }
+
+        #signin {
+            position: relative;
+            top: 10px;
+            right: 75px;
+            background-color: transparent;
+            color: white;
+            height: 45px;
+            width: 125px;
+            margin-top: 10px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            margin-left: 12px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .langopt1 {
+            color: black;
+            position: relative;
+            right: 30px;
+            bottom: 70px;
+        }
+
+        #hellosignin {
+            font-size: 12px;
+            position: relative;
+            left: 14px;
+            bottom: 10px;
+        }
+
+        #reor {
+            position: relative;
+            right: 60px;
+            height: 45px;
+            width: 60px;
+            font-size: 14px;
+            margin-top: 10px;
+            border: none;
+            background-color: transparent;
+            color: white;
+        }
+
+        .order {
+            position: relative;
+            color: white;
+            left: 5px;
+            font-size: 14px;
+
+        }
+
+        #cart {
+            position: relative;
+            top: 9px;
+            right: 30px;
+            width: 50px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+
+        #attachednav {
+            background-color: #232f3e;
+            height: 40px;     
+        }
+
+        .anav{
+            padding: 8px;
+        }
+
+        #container {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.268);
+            width: 99.6vw;
+            height: 33.4vh;
+        }
+
+        #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9, #box10, #box11, #box12 {
+            flex: 1;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 20px 0px rgba(162, 162, 162, 0.819);
+            
+        }
+
+        #box1 {
+            background-image: url('boat.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #box2 {
+            background-image: url('zebronics.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box3 {
+            background-image: url('noise.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box4 {
+            background-image: url('boult.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box5 {
+            background-image: url('jewel1.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box6 {
+            background-image: url('jewel2.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box7 {
+            background-image: url('jewel3.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box8 {
+            background-image: url('jewel4.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box9 {
+            background-image: url('ps1.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box10 {
+            background-image: url('ps2.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box11 {
+            background-image: url('ps3.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #box12 {
+            background-image: url('ps4.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #horizontalbox1 {
+            height: 137px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 96.9vw;
+            display: flex;
+            gap: 12px;
+            background-color: white;
+            margin-left: 10px;
+            
+        }
+
+        #horizontalbox2 {
+            height: 137px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 96.9vw;
+            display: flex;
+            gap: 12px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 13px;
+        }
+
+        #product1 {
+            height: 484px;
+            width: 665px;
+            background-image: url('product1.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product2 {
+            height: 484px;
+            width: 665px;
+            background-image: url('product2.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product3 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product3.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product4 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product4.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        #product5 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product5.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product6 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product6.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product7 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product7.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product8 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product8.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product9 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product9.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product10 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product10.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product11 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product11.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #product12 {
+            height: 133px;
+            width: 665px;
+            background-image: url('product12.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #banner {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #ban {
+            height: 200px;
+            width: 800px;
+            margin: auto;
+            box-shadow: 0px 0px 20px 0px rgba(162, 162, 162, 0.819);
+        }
+
+        #heading1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        #heading2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        #footerattached {
+            background-color: #38475a;
+            padding: 20px;
+            text-align: center;
+            color: rgb(199, 199, 199);
+        }
+
+        footer {
+            margin-top: 10px;
+            background-color: #232f3e;
+            height: 700px;
+        }
+
+        #footerText {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="Amazon-Logo.png" alt="" id="amazonLogo"></li>
+                <li id="location"><span>Delivering to Pune 411005</span> <br> <b>Update Location</b></li>
+                <li><select name="" id="Categories" title="">
+                        <option value="">All</option>
+                        <option value="">All Categories</option>
+                        <option value="">Alexa Skills</option>
+                        <option value="">Amazon Devices</option>
+                        <option value="">Amazon Fashion</option>
+                        <option value="">Amazon Fresh</option>
+                        <option value="">Amazon Fresh Meat</option>
+                        <option value="">Amazon Pharmacy</option>
+                        <option value="">Appliances</option>
+                        <option value="">Apps & Games</option>
+                        <option value="">Audible Audiobook</option>
+                    </select><input type="text" placeholder="Search Amazon.in"><a href="#"><button>Search</button></a></li>
+                
+                <li>
+                    <select name="" id="Languages" title="">
+                        <option value="" class="langopt">EN</option>
+                        <option value="" class="langopt">HI</option>
+                        <option value="" class="langopt">TA</option>
+                        <option value="" class="langopt">TE</option>
+                        <option value="" class="langopt">KN</option>
+                        <option value="" class="langopt">ML</option>
+                        <option value="" class="langopt">BN</option>
+                        <option value="" class="langopt">MR</option>
+                    </select>
+                </li>
+                    
+                <li>
+                    <span id="hellosignin">Hello, sign in</span>
+                    <select name="" id="signin" title="">
+                        <option value="" class="langopt1">Account & Lists</option>
+                        <option value="" class="langopt1">Sign in</option>
+                    </select>
+                </li>
+
+                
+                <li><button id="reor"><span>Returns</span><br><span class="order">& Orders</span> </button></li>
+                
+                <li><button id="cart">Cart</button></li>
+                
+            </ul>
+        </nav>
+
+        <nav id="attachednav">
+            <ul>
+                <li class="anav">All</li>
+                <li class="anav">Fresh</li>
+                <li class="anav">MX Player</li>
+                <li class="anav">Sell</li>
+                <li class="anav">Bestsellers</li>
+                <li class="anav">Today's Deals</li>
+                <li class="anav">Mobile</li>
+                <li class="anav">Prime</li>
+                <li class="anav">Cutomer Service</li>
+                <li class="anav">Fashion</li>
+                <li class="anav">New Releases</li>
+                <li class="anav">Amazon Pay</li>
+                <li class="anav">Electronics</li>
+                <li class="anav">Home & Kitchen</li>
+                <li class="anav">Car & Motorbike</li>
+                <li class="anav">Computers</li>
+                <li class="anav">Books</li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <div id="container">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+        </div>
+
+        <div id="container">
+            <div id="box5"></div>
+            <div id="box6"></div>
+            <div id="box7"></div>
+            <div id="box8"></div>
+        </div>
+
+        <div id="container">
+            <div id="box9"></div>
+            <div id="box10"></div>
+            <div id="box11"></div>
+            <div id="box12"></div>
+        </div>
+
+        <div id="horizontalbox1">
+        <b id="heading1">Up to 30% off Bike, Car & accessories from stores near you</b>
+            <div id="product1"></div>
+            <div id="product2"></div>
+            <div id="product3"></div>
+            <div id="product4"></div>
+            <div id="product5"></div>
+            <div id="product6"></div>
+        </div>
+
+        <div id="horizontalbox2">
+                <div id="product7"></div>
+                <div id="product8"></div>
+                <div id="product9"></div>
+                <div id="product10"></div>
+                <div id="product11"></div>
+                <div id="product12"></div>
+                <b id="heading2">Up to 50% off Home Appliances & accessories from stores near you</b>
+            </div>
+
+        <div id="banner">
+            <img src="banner.jpg" id="ban" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <div id="footerattached">Back to top</div>
+        <p id="footerText">© 1996-2025, Amazon.com, Inc. or its affiliates.</p>
+    </footer>
+    
+</body>
+</html>
